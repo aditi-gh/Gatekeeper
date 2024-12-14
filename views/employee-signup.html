@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Gatepass Form</title>
+    <link rel="stylesheet" href="employee-signup.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <img src="/logo.jpg" alt="Logo" class="logo">
+                <h1>Mecon Gatepass Management</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="role.html">Choose Role</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="gatepass-form" class="section">
+        <div class="container">
+            <h2>Employee Gatepass Form</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="employee-id">Employee ID</label>
+                <input type="text" id="employee-id" name="employee-id" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="entry-date">Date of Entry</label>
+                <input type="date" id="entry-date" name="entry-date" required>
+                
+                <label for="entry-time">Time of Entry</label>
+                <input type="time" id="entry-time" name="entry-time" required>
+                
+                <label for="duration">Estimated Duration of Visit (if applicable)</label>
+                <input type="number" id="duration" name="duration">
+                
+                <label for="reason">Reason for Leaving</label>
+                <select id="reason" name="reason" required>
+                    <option value="Official Work">Official Work</option>
+                    <option value="Personal Work">Personal Work</option>
+                    <option value="Medical Emergency">Medical Emergency</option>
+                </select>
+                
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" name="destination" required>
+                
+                <label for="approver-name">Name of Approving Manager/Supervisor</label>
+                <input type="text" id="approver-name" name="approver-name" required>
+                
+                <label for="approver-email">Email of Approving Manager/Supervisor</label>
+                <input type="email" id="approver-email" name="approver-email" required>
+                
+                <label for="id-type">Type of ID</label>
+                <select id="id-type" name="id-type" required>
+                    <option value="Employee ID Card">Employee ID Card</option>
+                    <option value="Drivers License">Driver’s License</option>
+                </select>
+                
+                <label for="id-number">ID Number</label>
+                <input type="text" id="id-number" name="id-number" required>
+                
+                <label for="vehicle-reg">Vehicle Registration Number (if applicable)</label>
+                <input type="text" id="vehicle-reg" name="vehicle-reg">
+                
+                <label for="vehicle-type">Type of Vehicle</label>
+                <select id="vehicle-type" name="vehicle-type">
+                    <option value="Car">Car</option>
+                    <option value="Bike">Bike</option>
+                </select>
+                
+                <label for="comments">Comments or Additional Notes</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gatepass Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

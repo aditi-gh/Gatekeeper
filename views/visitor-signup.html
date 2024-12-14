@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Gatepass Form</title>
+    <link rel="stylesheet" href="visitor-signup.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <img src="/logo.jpg" alt="Logo" class="logo">
+                <h1>Mecon Gatepass Management</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="role.html">Choose Role</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="gatepass-form" class="section">
+        <div class="container">
+            <h2>Visitor Gatepass Form</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="visit-date">Date of Visit</label>
+                <input type="date" id="visit-date" name="visit-date" required>
+                
+                <label for="visit-time">Time of Visit</label>
+                <input type="time" id="visit-time" name="visit-time" required>
+                
+                <label for="duration">Duration of Visit (in hours)</label>
+                <input type="number" id="duration" name="duration" required>
+                
+                <label for="purpose">Purpose of Visit</label>
+                <select id="purpose" name="purpose" required>
+                    <option value="Meeting">Meeting</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Delivery">Delivery</option>
+                    <option value="Maintenance">Maintenance</option>
+                </select>
+                
+                <label for="person-to-visit">Name of Person/Department to Visit</label>
+                <input type="text" id="person-to-visit" name="person-to-visit" required>
+                
+                <label for="id-type">Type of ID</label>
+                <select id="id-type" name="id-type" required>
+                    <option value="Passport">Passport</option>
+                    <option value="Drivers License">Driver’s License</option>
+                    <option value="National ID">National ID</option>
+                </select>
+                
+                <label for="id-number">ID Number</label>
+                <input type="text" id="id-number" name="id-number" required>
+                
+                <label for="company">Company Name (if applicable)</label>
+                <input type="text" id="company" name="company">
+                
+                <label for="position">Position/Designation (if applicable)</label>
+                <input type="text" id="position" name="position">
+                
+                <label for="vehicle-reg">Vehicle Registration Number (if applicable)</label>
+                <input type="text" id="vehicle-reg" name="vehicle-reg">
+                
+                <label for="vehicle-type">Type of Vehicle</label>
+                <select id="vehicle-type" name="vehicle-type">
+                    <option value="Car">Car</option>
+                    <option value="Bike">Bike</option>
+                    <option value="No-Vehicle">No Vehicle</option>
+                </select>
+                
+                <label for="special-requirements">Special Requirements/Requests</label>
+                <textarea id="special-requirements" name="special-requirements" rows="4"></textarea>
+                
+                <label for="comments">Comments or Additional Notes</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gatepass Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
